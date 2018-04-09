@@ -1,9 +1,5 @@
 # Terraform AWS Lambda API Gateway
 
-Terraform module which deploys a serverless HTTP endpoint backed by AWS Lambda & API Gateway.
-
-[Docs](https://registry.terraform.io/modules/techjacker/lambda-api-gateway) on the terraform module registry.
-
 ### Features
 - Uploads lambda zip bundle to AWS S3 during `terraform apply`
 - Creates VPC with private and public subnets

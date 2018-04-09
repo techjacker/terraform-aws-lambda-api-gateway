@@ -1,0 +1,24 @@
+repos:
+-   repo: https://github.com/kintoandar/pre-commit.git
+    sha: v2.1.0
+    hooks:
+    -   id: terraform_validate
+
+-   repo: https://github.com/antonbabenko/pre-commit-terraform.git
+    sha: v1.5.0
+    hooks:
+    -   id: terraform_fmt
+
+-   repo: git://github.com/pre-commit/pre-commit-hooks
+    sha: v1.2.0
+    hooks:
+    -   id: check-added-large-files
+    -   id: check-case-conflict
+    -   id: check-json
+    -   id: check-merge-conflict
+    -   id: check-yaml
+    -   id: debug-statements
+    -   id: detect-private-key
+    -   id: double-quote-string-fixer
+    -   id: forbid-new-submodules
+    -   id: trailing-whitespace

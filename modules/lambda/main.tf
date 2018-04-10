@@ -12,7 +12,7 @@ resource "aws_lambda_function" "lambda" {
     security_group_ids = ["${var.security_group_ids}"]
   }
 
-  environment {
-    variables = {}
-  }
+  # environment {
+  #   variables = {}
+  # }
 }

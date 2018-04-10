@@ -13,9 +13,6 @@ resource "aws_lambda_function" "lambda" {
   }
 
   environment {
-    variables = {
-      SQLALCHEMY_DATABASE_URI = "${var.database_uri}"
-      APP_CONFIG_FILE         = "${var.app_config}"
-    }
+    variables = {}
   }
 }

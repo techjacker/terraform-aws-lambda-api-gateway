@@ -68,6 +68,11 @@ variable "lambda_handler" {
   description = "Lambda Function Handler"
 }
 
+variable "lambda_memory" {
+  description = "Lambda memory size, 128 MB to 3,008 MB, in 64 MB increments"
+  default = "128"
+}
+
 ####################
 # API Gateway
 ####################

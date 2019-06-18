@@ -78,6 +78,7 @@ module "lambda" {
   handler       = "${var.lambda_handler}"
   runtime       = "${var.lambda_runtime}"
   role          = "${aws_iam_role.lambda_role.arn}"
+  memory        = "${var.lambda_memory}"
   database_uri  = "<UPDATE_ME>"
 
   # database_uri  = "${module.rds_instance.url}"

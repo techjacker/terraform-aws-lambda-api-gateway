@@ -22,6 +22,10 @@ variable "handler" {
   description = "The handler name of the lambda function"
 }
 
+variable "memory" {
+  description = "The memory size of the lambda function"
+}
+
 variable "role" {
   description = "IAM role attached to the Lambda Function (ARN)"
 }

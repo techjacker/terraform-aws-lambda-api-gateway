@@ -6,6 +6,7 @@ resource "aws_lambda_function" "lambda" {
   handler          = "${var.handler}"
   runtime          = "${var.runtime}"
   source_code_hash = "${var.hash}"
+  memory_size      = "${var.memory}"
 
   vpc_config {
     subnet_ids         = ["${var.subnet_ids}"]
